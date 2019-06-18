@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap-datetimepicker.min.css">
+
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/tether.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/bootstrap-select.min.js"></script>
+    <script src="/static/js/bootstrap.file-input.js"></script>
+    <script src="/static/js/moment-with-locales.min.js"></script>
+    <script src="/static/js/bootstrap-datetimepicker.min.js"></script>
+    <script src='/static/js/tablesorter.min.js'></script>
+
+    <style type='text/css'>
+        body {
+            margin: 10px;
+        }
+        .nav>li>a {
+            display: inline-block;
+        }
+        .center {
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .navbar-fixed-left {
+            width: 140px;
+            position: fixed;
+            height: 100%;
+            border-radius: 5px;
+        }
+        .navbar-fixed-left .navbar-nav > li
+        {
+            float: none;
+            width: 139px;
+        }
+        .navbar-fixed-left + .container {
+            padding-left: 160px;
+        }
+        #standings_table thead tr .header {
+            background-image: url(/static/js/bg.gif);
+            background-repeat: no-repeat;
+            background-position: center right;
+            cursor: pointer;
+        }
+        #standings_table thead tr .headerSortUp {
+            background-image: url(/static/js/asc.gif);
+        }
+        #standings_table thead tr .headerSortDown {
+            background-image: url(/static/js/desc.gif);
+        }
+    </style>
+</head>
+<body>
+    <div style='padding-left:20px;'>
+<div style='width: 500px' class='center'>
+
+    <ul class="nav nav-pills">
+        <li class='active'>
+            <a href='/login'>
+                Войти
+            </a>
+        </li>
+        <li>
+            <a href='/register'>
+                Зарегистрироваться
+            </a>
+        </li>
+    </ul>
+    <br>
+
+
+
+
+    <form method='POST'>
+        <div class='form-group'>
+            <label for='input_username'>Логин</label>
+            <input name='username' type='text' class='form-control' value=''>
+        </div>
+
+        <div class='form-group'>
+            <label for='input_password'>Пароль</label>
+            <input type='password' class='form-control' id='input_password' name='password'>
+        </div>
+
+        <button type='submit' class='btn btn-default'>Войти</button>
+    </form>
+</div>
+
+</div>
+</body>
+</html>
